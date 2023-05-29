@@ -1,0 +1,52 @@
+body{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 150px 1fr 100px;
+    height: 100vh;
+    background-color: #002;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+}
+header{
+    grid-area: header;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+#mestre{
+    height: 120px;
+}
+main{
+    padding: 20px;
+    grid-area: main;
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+    width: 100%;
+    align-items: center;
+    transform: translate(0px,-50px);
+    justify-content: space-between;
+}
+#guia{
+    padding: 20px;
+    font-style: none;
+    font-size: 2rem;
+}
+#champs{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    gap: 20px;
+    background-color: #fff3;
+    padding: 20px;
+}
+.champs__img{
+    height: 150px;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
